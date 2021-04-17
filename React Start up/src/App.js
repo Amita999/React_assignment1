@@ -1,4 +1,5 @@
-import ExpensItemComFunction from "./components/ExpenseItem";
+// import ExpensItemComFunction from "./components/ExpenseItem";
+import ExpenseComponent from "./components/Expenses";
 function App() {
   let expenseItemArray = [
     {
@@ -22,30 +23,7 @@ function App() {
       expenseAmount: 300,
     },
   ];
-  return (
-    <div>
-      <ExpensItemComFunction
-        expenseDate={expenseItemArray[0].expenseDate}
-        expenseTitle={expenseItemArray[0].expenseTitle}
-        expenseAmount={expenseItemArray[0].expenseAmount}
-      ></ExpensItemComFunction>
-      <ExpensItemComFunction
-        expenseDate={expenseItemArray[1].expenseDate}
-        expenseTitle={expenseItemArray[1].expenseTitle}
-        expenseAmount={expenseItemArray[1].expenseAmount}
-      ></ExpensItemComFunction>
-      <ExpensItemComFunction
-        expenseDate={expenseItemArray[2].expenseDate}
-        expenseTitle={expenseItemArray[2].expenseTitle}
-        expenseAmount={expenseItemArray[2].expenseAmount}
-      ></ExpensItemComFunction>
-      <ExpensItemComFunction
-        expenseDate={expenseItemArray[3].expenseDate}
-        expenseTitle={expenseItemArray[3].expenseTitle}
-        expenseAmount={expenseItemArray[3].expenseAmount}
-      ></ExpensItemComFunction>
-    </div>
-  );
+  return <ExpenseComponent items={expenseItemArray} />;
 }
 
 export default App;

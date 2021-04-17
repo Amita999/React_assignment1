@@ -1,5 +1,6 @@
 import "./ExpenseItemStyle.css";
 import ExpenseDateComponent from "./ExpenseDate";
+
 function ExpensItemComFunction(props) {
   return (
     <div className="expense-item">
