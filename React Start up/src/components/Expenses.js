@@ -1,8 +1,9 @@
 import ExpensItemComFunction from "./ExpenseItem";
+import Card from "./CardComponent";
 import "./Expenses.css";
 function ExpenseComponent(props) {
   return (
-    <div classNAme="expenses">
+    <Card className="expenses">
       <ExpensItemComFunction
         expenseDate={props.items[0].expenseDate}
         expenseTitle={props.items[0].expenseTitle}
@@ -23,7 +24,7 @@ function ExpenseComponent(props) {
         expenseTitle={props.items[3].expenseTitle}
         expenseAmount={props.items[3].expenseAmount}
       ></ExpensItemComFunction>
-    </div>
+    </Card>
   );
 }
 

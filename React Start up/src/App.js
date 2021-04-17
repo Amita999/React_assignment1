@@ -23,7 +23,11 @@ function App() {
       expenseAmount: 300,
     },
   ];
-  return <ExpenseComponent items={expenseItemArray} />;
+  return (
+    <div>
+      <ExpenseComponent items={expenseItemArray} />
+    </div>
+  );
 }
 
 export default App;
