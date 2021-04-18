@@ -1,5 +1,6 @@
 // import ExpensItemComFunction from "./components/ExpenseItem";
-import ExpenseComponent from "./components/Expenses";
+import ExpenseComponent from "./components/EXPENSES/Expenses";
+import NewExpense from "./components/NewExpense/NewExpenseComponent";
 function App() {
   let expenseItemArray = [
     {
@@ -25,6 +26,7 @@ function App() {
   ];
   return (
     <div>
+      <NewExpense />
       <ExpenseComponent items={expenseItemArray} />
     </div>
   );
